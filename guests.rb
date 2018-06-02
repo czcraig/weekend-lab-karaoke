@@ -1,9 +1,8 @@
 class Guests
-  attr_reader(:guest_party_name, :number_of_guests)
+  attr_reader(:guest_name)
 
-   def initialize(guest_party_name, number_of_guests)
-    @guest_party_name = guest_party_name
-    @number_of_guests = number_of_guests
+   def initialize(guest_name)
+    @guest_name = guest_name
    end
 
 
