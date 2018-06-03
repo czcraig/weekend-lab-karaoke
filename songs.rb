@@ -6,6 +6,10 @@ class Songs
     @artist = artist
   end
 
+  def transfer_song
+    @title.pop
+  end
+
 
 
 
