@@ -3,7 +3,7 @@ class Rooms
 
  def initialize(room_name, number_of_guests_in_room,  songs_on_playlist)
    @room_name = room_name
-    @guests_using_room = []
+    @guests_using_room = number_of_guests_in_room
    @songs_on_playlist = songs_on_playlist
  end
 
@@ -24,10 +24,9 @@ class Rooms
  end
 
 
- # def add_song(song)
- #
- #   @songs_on_playlist << song
- # end
+ def add_song_to_playlist(song)
+    @songs_on_playlist << song
+ end
 
  # def add_song(song)
  #   @song_playlist << song
